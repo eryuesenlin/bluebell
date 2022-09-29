@@ -1,0 +1,30 @@
+app:
+  mode: "release"
+  port: 8080
+  start_time: "2022-09-01"
+  machine_id: 1
+
+auth:
+  jwt_expire: 8760
+
+log:
+  level: "debug"
+  filename: "./log/bluebell.log"
+  max_size: 100
+  max_backups: 10
+  max_age: 30
+
+mysql:
+  user: "root"
+  password: "ranguangdeng"
+  host: "192.168.91.100"
+  port: 13306
+  db: "bluebell"
+  max_open_conns: 100
+  max_idle_conns: 20
+
+redis:
+  host: "192.168.91.100"
+  port: 16379
+  password: "ranguangdeng"
+  db: 0
